@@ -16,7 +16,7 @@ Este app consiste em uma aplicação TypeScript que armazena informações sobre
 
 Este foi o sexto repositório de código apresentado no [Curso Superior de TSI](https://www.ifms.edu.br/campi/campus-aquidauana/cursos/graduacao/sistemas-para-internet/sistemas-para-internet) do IFMS como requisito para obtenção da nota parcial das atividades da unidade curricular Linguagem de Programação III.
 
-| [&larr; Repositório anterior](https://github.com/mdccg/decoupled-postal-code-api) | [Próximo repositório &rarr;](#) |
+| [&larr; Repositório anterior](https://github.com/mdccg/decoupled-contact-book-api) | [Próximo repositório &rarr;](#) |
 |-|-|
 
 ## Pilha de tecnologia
