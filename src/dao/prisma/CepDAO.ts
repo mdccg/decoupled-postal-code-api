@@ -17,4 +17,14 @@ export class CepDAO extends GenericDAO<Cep> implements ICepDAO {
     const { count } = await this._model.deleteMany({});
     return count !== 0;
   }
+
+  async findByCep(cep: string): Promise<Cep> {
+    const result = await this._model.findUnique({ where: { cep } });
+    return result;
+  }
+  
+  async findByLogradouro(logradouro: string): Promise<Cep> {
+    const result = await this._model.findUnique({ where: { logradouro } });
+    return result;
+  }
 }

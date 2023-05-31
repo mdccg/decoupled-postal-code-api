@@ -5,11 +5,12 @@ import { ICepDAO } from './../dao/ICepDAO';
 import { CepDAO as CepMongoDAO } from './../dao/mongodb/CepDAO';
 import { CepDAO as CepPrismaDAO } from './../dao/prisma/CepDAO';
 import { TYPES } from './types';
+import DatabaseType from './../types/DatabaseType';
 
-export const getContainer = async (sgbd: 'mongodb' | 'postgres'): Promise<Container> => {
+export const getContainer = async (database: DatabaseType): Promise<Container> => {
   const container = new Container();
 
-  switch(sgbd) {
+  switch(database) {
     case 'mongodb':
       const connection = await MongoClient.connect('mongodb://localhost:27017');
       const db = connection.db('correios-mongo');

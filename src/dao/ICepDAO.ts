@@ -3,4 +3,6 @@ import { IGenericDAO } from './IGenericDAO';
 
 export interface ICepDAO extends IGenericDAO<Cep> {
   truncate(): Promise<boolean>;
+  findByCep(cep: string): Promise<Cep>;
+  findByLogradouro(logradouro: string): Promise<Cep>;
 }
