@@ -1,8 +1,8 @@
-# decoupled-contact-book-api
+# decoupled-postal-code-api
 
 ## Sumário
 
-- [decoupled-contact-book-api](#decoupled-contact-book-api)
+- [decoupled-postal-code-api](#decoupled-postal-code-api)
   - [Sumário](#sumário)
   - [Motivação](#motivação)
   - [Pilha de tecnologia](#pilha-de-tecnologia)
