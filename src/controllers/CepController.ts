@@ -4,13 +4,9 @@ import { getContainer } from './../injections/container';
 import { ICepDAO } from './../dao/ICepDAO';
 import { TYPES } from './../injections/types';
 import { Cep } from './../models/Cep';
-import 'reflect-metadata';
 
-/**
- * FIXME
- */
 export const getAsynchronousCepController = async () => {
-  const container = await getContainer('mongodb');
+  const container = await getContainer('postgres');
   const cepDAO = container.get<ICepDAO>(TYPES.ICepDAO);
   const cepController = new CepController(cepDAO);
   return cepController;
